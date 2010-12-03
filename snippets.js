@@ -13,6 +13,10 @@ jQuery(document).ready(function($){
 
 </script>
 
+// IE sniffer, removes need for css hacks
+    if($.browser.msie){
+        $('body').addClass('IE' + $.browser.version.substring(0,1));
+    }
 
 // preloading function of images
 jQuery.preloadImages = function()
@@ -424,7 +428,7 @@ var webid = url.substring(url.lastIndexOf('/') + 1);
 // jquery code insertion format
 before<div>prepend (text/html) append</div>after
 
-for troubleshooting, show what jquery thinks the element ID is when clicked
+// for troubleshooting, show what jquery thinks the element ID is when clicked
     $(".whatever").click(function() {
        var thistrigger = $(this).attr("id");
        alert(thistrigger);
