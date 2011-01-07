@@ -388,6 +388,9 @@ if( $.browser.safari ){
 //focus field on page load, just add "focused" class to it
     $(".focused").focus();
 
+//set checkbox to checked, use 'false' to uncheck it
+$('.whatever input').attr('checked', true);
+
 //everything you need to launch a flowplayer video and start/stop playback with external javascript
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
