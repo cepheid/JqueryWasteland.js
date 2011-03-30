@@ -391,6 +391,23 @@ if( $.browser.safari ){
 //set checkbox to checked, use 'false' to uncheck it
 $('.whatever input').attr('checked', true);
 
+//checks if product page is used, and appends a specific value to the free-samples-link in the page. On the free trials page, it grabs this value from the url and pre-checks the checkbox associated with that value
+    if($("#product-info").is(":visible")){
+	product_id = $("#product-info").attr("product_id");
+    $("#free-samples-link").attr("href","/free-samples?value="+product_id);
+    }
+    if($(".free-trials").is(":visible")){
+    trialurl = window.location.href;
+    trialvalue = trialurl.substring(trialurl.lastIndexOf('=') + 1);
+
+       $('.free-trials input').each(function(index) {
+           if($(this).attr("value") == trialvalue){
+           $(this).attr('checked', true);
+           }
+       });
+
+    }
+
 //everything you need to launch a flowplayer video and start/stop playback with external javascript
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
