@@ -54,16 +54,16 @@ $(document).ready(function() {
 and the html:
          <div id="popup-tabbed-list">
            <ul>
-           <li class="option1">Prealgebra</li>
-           <li class="option2">Beginning Algebra</li>
-           <li class="option3">Intermediate Algebra</li>
-           <li class="option4">College Algebra</li>
+           <li class="option1">subjectNAME</li>
+           <li class="option2">subjectNAME</li>
+           <li class="option3">subjectNAME</li>
+           <li class="option4">subjectNAME</li>
            </ul>
            
-           <div class="tab-option"><h4>Prealgebra</h4><div id="demoPlayer" class="left"></div></div>
-           <div class="tab-option"><h4>Beginning Algebra</h4>Here's the vid.</div>
-           <div class="tab-option"><h4>Intermediate Algebra</h4>Here's the vid.</div>
-           <div class="tab-option"><h4>College Algebra</h4>Here's the vid.</div>
+           <div class="tab-option"><h4>subjectNAME</h4><div id="demoPlayer" class="left"></div></div>
+           <div class="tab-option"><h4>subjectNAME</h4>Here's the vid.</div>
+           <div class="tab-option"><h4>subjectNAME</h4>Here's the vid.</div>
+           <div class="tab-option"><h4>subjectNAME</h4>Here's the vid.</div>
        </div>
 
 
@@ -187,7 +187,7 @@ $(document).ready(function(){
        <a id="final-screen">blargh</a>
 
        <a
-            href="http://cachefly.thinkwell.com/public/homeschool/main_demo.flv"  
+            href="http://ccnhostNAME.domainNAME.com/public/directoryNAME/main_demo.flv"  
             id="player">
            <img src="demovideo.jpg" />
        </a>
@@ -197,10 +197,10 @@ $(document).ready(function(){
 
     <div id="clips" class="float-left">
        <ul>
-       <li><a href="http://cachefly.thinkwell.com/public/homeschool/main_demo.flv">Thumbnail #1</a></li>
-       <li><a href="http://my.thinkwell.com/cf/external/?40BA867A25F13D4D">Thumbnail #2</a></li>
-       <li><a href="http://my.thinkwell.com/cf/external/?92032EF5C20A56DF">Thumbnail #3</a></li>
-       <li><a href="http://my.thinkwell.com/cf/external/?92032EF5C20A56DF">Thumbnail #4</a></li>
+       <li><a href="http://ccnhostNAME.domainNAME.com/public/directoryNAME/main_demo.flv">Thumbnail #1</a></li>
+       <li><a href="http://my.domainNAME.com/cf/external/?codeNAME">Thumbnail #2</a></li>
+       <li><a href="http://my.domainNAME.com/cf/external/?codeNAME">Thumbnail #3</a></li>
+       <li><a href="http://my.domainNAME.com/cf/external/?codeNAME">Thumbnail #4</a></li>
        </ul>
           
     </div>
@@ -264,17 +264,17 @@ $(document).ready(function(){
 <body>
 
 <div class="main-content">
-   <h2>Math Help Videos: Beg Algebra: Finding equations Given Two Points</h2>
+   <h2>titleNAME</h2>
 </div>
 
-<a href="http://www.thinkwell.com/student/store/prealgebra" title="" id="thinkwell-ad-link"><div id="thinkwell-ad"></div></a>
+<a href="http://www.domainNAME.com/directoryNAME/store/subjectNAME" title="" id="domainNAME-ad-link"><div id="domainNAME-ad"></div></a>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function($){
    var title = $(".main-content h2").text();
        if(title=="") { // set default/ broken value
-       title = "mathematics";
+       title = "subjectNAME";
        } else {
        title = title.toLowerCase();  // convert everything to lowercase
        title = title.replace("math help videos: ","")  //strips out the "Math Help Videos: " part of the string
@@ -284,21 +284,20 @@ jQuery(document).ready(function($){
        var titlelink = title.replace(/[^a-zA-Z0-9]+/g,'-'); //regex replaces any spaces, extra characters as dashes for url encoding
        };
 
-   $("#thinkwell-ad").text(title);
-   if(title=="mathematics") {} // default/ broken value link is defined by the html <a href=""> to still work if javascript disabled
+   $("#domainNAME-ad").text(title);
+   if(title=="subjectNAME") {} // default/ broken value link is defined by the html <a href=""> to still work if javascript disabled
    else {
-   $("#thinkwell-ad-link").attr("href", "http://www.thinkwell.com/student/product/"+titlelink); // sets the href attribute to string + variable defined above
+   $("#domainNAME-ad-link").attr("href", "http://www.domainNAME.com/directoryNAME/product/"+titlelink); // sets the href attribute to string + variable defined above
    };
 });
 </script>
 
 <style>
-#thinkwell-ad {background:#0a6aa9 url(background.png) 0 0 no-repeat;color:#FF7200;font-family:Trebuchet MS, Helvetica, Arial;font-size:17px;font-weight:700;height:165px;padding:45px 0 0 10px;text-transform:uppercase;width:200px}
-#thinkwell-ad-link {text-decoration:none}
+#domainNAME-ad {background:#0a6aa9 url(background.png) 0 0 no-repeat;color:#FF7200;font-family:Trebuchet MS, Helvetica, Arial;font-size:17px;font-weight:700;height:165px;padding:45px 0 0 10px;text-transform:uppercase;width:200px}
+#domainNAME-ad-link {text-decoration:none}
 
 </style>
 
-</body>
 
 // Random content grabber, extracts items from randomcontent.xml by request
    $.fn.randomContent = function(options){
@@ -417,7 +416,7 @@ $('.whatever input').attr('checked', true);
 </head><body>
 
        <a
-            href="http://cachefly.thinkwell.com/public/homeschool/main_demo.flv"  
+            href="http://ccnhostNAME.domainNAME.com/public/directoryNAME/main_demo.flv"  
             style="background-image:url(demovideo.jpg);height:480px;width:640px;cursor:pointer;border:0;display:block"
             id="player">
            <img src="demovideo.jpg" alt=""/>
