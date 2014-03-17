@@ -4,6 +4,8 @@ RANDOM JQUERY-BASED JAVASCRIPT SNIPPETS
 by Steve Svoboda, CepheidDesign.com
 for various projects
 
+PLEASE NOTE: This JQUERY is from long, long ago, and a galaxy far, far away. A lot of these actions have been deprecated.
+
 NOTE: This is a series of JQuery-based functions (some including plain JavaScript, CSS, and HTML as needed) I've used that accomplished what I needed to accomplish.
 
 This code is not intended to be used as-is, only as an example of JQuery that worked at least once before! If you learn JQuery by example (as I typically do), you may find some of these functions helpful, and are certainly welcome to optimize them if you can.
